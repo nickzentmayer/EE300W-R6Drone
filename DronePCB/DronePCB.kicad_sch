@@ -1204,8 +1204,8 @@
 		)
 	)
 	(sheet
-		(at 52.578 79.756)
-		(size 44.958 24.384)
+		(at 52.578 81.026)
+		(size 26.162 23.114)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1220,7 +1220,7 @@
 		)
 		(uuid "b72735a3-baa6-4eaf-854a-296625361d8a")
 		(property "Sheetname" "CC1101Radio"
-			(at 52.578 79.0444 0)
+			(at 52.578 80.3144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1235,6 +1235,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "GDO2" input
+			(at 78.74 88.9 0)
+			(uuid "debed551-fa48-4ae5-9524-483f79e26714")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOSI" input
+			(at 52.578 86.36 180)
+			(uuid "7e745f7c-17e6-4850-9505-4c9cd75b8034")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MISO" input
+			(at 52.578 90.17 180)
+			(uuid "79eb68cc-7772-4c19-8afe-d66679ca9653")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GDO(ATEST)" input
+			(at 78.74 93.98 0)
+			(uuid "9ce95fd1-b074-4b66-8d71-bb11d9a03a80")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CSN" input
+			(at 52.578 93.98 180)
+			(uuid "9bd4ec03-74bc-48e8-9a42-d5507500293e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCLK" input
+			(at 52.578 97.79 180)
+			(uuid "47aed8bd-725f-40d6-89cf-b39a82a8dc92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

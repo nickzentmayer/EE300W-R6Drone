@@ -1035,6 +1035,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 232.41 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82c70ead-33b9-4222-b24d-039ab33f76e3")
+	)
 	(no_connect
 		(at 93.98 138.43)
 		(uuid "45db6d06-472b-4118-ba58-b973c16cc6b0")
@@ -1132,6 +1138,16 @@
 			(type default)
 		)
 		(uuid "37ec57e9-ded8-4c24-94f2-58d9517936ac")
+	)
+	(wire
+		(pts
+			(xy 226.06 116.84) (xy 232.41 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d35fe6d-eae1-4e2a-951f-575b96dc9d44")
 	)
 	(wire
 		(pts
@@ -1245,6 +1261,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 116.84) (xy 232.41 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a17c63f9-fcb0-48a8-8e6f-ec127db0f75f")
+	)
+	(wire
+		(pts
 			(xy 254 116.84) (xy 251.46 116.84)
 		)
 		(stroke
@@ -1265,7 +1291,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 114.3) (xy 226.06 114.3)
+			(xy 237.49 114.3) (xy 232.41 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1302,6 +1328,16 @@
 			(type default)
 		)
 		(uuid "ee21fdff-6122-437b-aab2-f96eef87e0e9")
+	)
+	(wire
+		(pts
+			(xy 232.41 114.3) (xy 226.06 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee532680-3630-438e-b135-a67b7a6b4907")
 	)
 	(symbol
 		(lib_id "power:+3V3")

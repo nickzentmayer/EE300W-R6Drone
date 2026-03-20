@@ -6,7 +6,7 @@
 
 [C1, C2, C3, C13, C14, C16 Capacitor x3](https://www.digikey.com/en/products/detail/yageo/AC0603KRX7R8BB104/5882996) $0.14
 
-[C4 Capacitor x1](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012206053/5453827)
+[C4 Capacitor x1](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012206053/5453827) $0.10
 
 [C5, C6 Capacitor x2](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/885012206076/5453849)
 

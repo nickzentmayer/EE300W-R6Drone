@@ -621,6 +621,10 @@
     [
       "93a7ea6a-fcf4-476b-8d2c-922c1c402e60",
       "I2S Microphone"
+    ],
+    [
+      "2cadc65a-07d4-4bc4-8f13-b3ef3269ebc6",
+      "IR Circuit"
     ]
   ],
   "text_variables": {}

@@ -13,3 +13,43 @@
 [C7 Capacitor x1](https://www.digikey.in/en/products/detail/yageo/CC0603KRX7R8BB473/2103111)
 
 [C8, C9, C10, C11 Capacitor x4](https://www.digikey.in/en/products/detail/yageo/CC1206KKX7R8BB106/5195365)
+
+[C15 Capacitor x1]
+
+[C17 Capacitor x1]
+
+[Ci Capacitor x1]
+
+[Csys Capacitor x1]
+
+[L1 Inductor x1]
+
+[R1 Resistor x1]
+
+[R2 Resistor x1]
+
+[R3, R4, R5 Resistor x3]
+
+[R6, R10, R11 Resistor x3]
+
+[R7 Resistor x1]
+
+[R8 Resistor x1]
+
+[R9 Resistor x1]
+
+[R12 Resistor x1]
+
+[R13 Resistor x1]
+
+[R14 Resistor x1]
+
+[R15 Resistor x1]
+
+[RAC, RSR Resistor x2]
+
+[Ri Resistor x1]
+
+[U1 Charger Controller x1]
+
+[U2 Dual Digital Transister x1]

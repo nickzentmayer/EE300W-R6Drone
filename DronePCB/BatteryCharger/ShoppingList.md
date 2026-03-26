@@ -16,7 +16,7 @@
 
 [C8, C9, C10, C11 Capacitor x4](https://www.digikey.in/en/products/detail/samsung-electro-mechanics/CL31B106KAHNFNE/3888758) $0.21
 
-[C15 Capacitor x1]
+[C15 Capacitor x1](
 
 [C17 Capacitor x1]
 

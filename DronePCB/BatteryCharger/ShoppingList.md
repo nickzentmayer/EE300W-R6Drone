@@ -24,7 +24,11 @@
 
 [Csys Capacitor x1](https://www.digikey.com/en/products/detail/kyocera-avx/RET0611221M025B/25928184) $0.13 or free
 
-[L1 Inductor x1]
+[L1 Inductor x1](https://www.digikey.com/en/products/detail/vishay-dale/IHLP2525CZER4R7M01/1220675) $1.02
+
+[D1 Diode Schottky x1](https://www.digikey.com/en/products/detail/onsemi/NSVBAT54LT1G/8538756) $0.17
+
+[D2 Diode Dual Schottky x1](https://www.digikey.com/en/products/detail/diotec-semiconductor/BAT54C/13163831) $0.14
 
 [R1 Resistor x1]
 

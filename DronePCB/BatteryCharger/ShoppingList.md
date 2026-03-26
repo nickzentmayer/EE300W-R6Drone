@@ -16,13 +16,13 @@
 
 [C8, C9, C10, C11 Capacitor x4](https://www.digikey.in/en/products/detail/samsung-electro-mechanics/CL31B106KAHNFNE/3888758) $0.21
 
-[C15 Capacitor x1](
+[C15 Capacitor x1](https://www.digikey.com/en/products/detail/venkel/C0603X7R250-103KNE-CT/14654192) $0.06
 
-[C17 Capacitor x1]
+[C17 Capacitor x1](https://www.digikey.com/en/products/detail/würth-elektronik/885012206061/5453834) $0.10
 
-[Ci Capacitor x1]
+[Ci Capacitor x1](https://www.digikey.com/en/products/detail/tdk-corporation/C3225X7R1E225K200AM/2443571) $0.42
 
-[Csys Capacitor x1]
+[Csys Capacitor x1](https://www.digikey.com/en/products/detail/kyocera-avx/RET0611221M025B/25928184) $0.13 or free
 
 [L1 Inductor x1]
 

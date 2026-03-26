@@ -4,3 +4,4 @@ The two parts will be shown below for a reference:
   -https://www.rocelec.com/part/01t4w00000POyTCAA1-CYPD317724LQXQT      (PD IC)
   -https://www.digikey.com/en/products/detail/diodes-incorporated/DMP3098LSD-13/1934996?msockid=386b344096666c7d03cf27a897a46de7    (MOSFETS used in a phils lab video that I took: https://www.youtube.com/watch?v=W13HNsoHj7A)
 For the Power delivery IC I set it up for outputting: 12V and 2.75A to the system. I also took out some parts of the schematic that I thought were unnecessary. The datasheets can be found at the respective websites but I will put the datasheet for the PD IC in the folder.
+New updated PD schematic as of 3/26 is USB PD.kicad_pro file

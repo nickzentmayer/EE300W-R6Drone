@@ -30,7 +30,7 @@
 
 [D2 Diode Dual Schottky x1](https://www.digikey.com/en/products/detail/diotec-semiconductor/BAT54C/13163831) $0.14
 
-[R1 Resistor x1]
+[R1 Resistor x1](https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD4303F/9845330) $0.10
 
 [R2 Resistor x1]
 
@@ -42,7 +42,7 @@
 
 [R8 Resistor x1]
 
-[R9 Resistor x1]
+[R9 Resistor x1](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FT10R0/1759594) $0.10
 
 [R12 Resistor x1]
 
@@ -52,10 +52,6 @@
 
 [R15 Resistor x1]
 
-[RAC, RSR Resistor x2]
+[RAC, RSR Resistor x2](https://www.digikey.com/en/products/detail/ohmite/LVM12FTR010E-TR/16838338) $0.05
 
-[Ri Resistor x1]
-
-[U1 Charger Controller x1]
-
-[U2 Dual Digital Transister x1]
+[Ri Resistor x1](https://www.digikey.com/en/products/detail/yageo/RC1210FR-072RL/5919486) $0.10

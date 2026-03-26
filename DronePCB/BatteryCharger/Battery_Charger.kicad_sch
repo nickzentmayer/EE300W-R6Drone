@@ -2656,12 +2656,6 @@
 		(uuid "4ec33f1a-6612-4f49-8947-2da3a69a5275")
 	)
 	(junction
-		(at 128.27 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4f14fad6-f138-4fd6-99cd-3ae7ed9e8c12")
-	)
-	(junction
 		(at 124.46 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3079,7 +3073,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 21.59) (xy 186.69 21.59)
+			(xy 135.89 20.32) (xy 186.69 20.32)
 		)
 		(stroke
 			(width 0)
@@ -3159,7 +3153,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 21.59) (xy 186.69 26.67)
+			(xy 186.69 20.32) (xy 186.69 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3186,16 +3180,6 @@
 			(type default)
 		)
 		(uuid "51e537f5-2999-4749-8352-c7e63685a8ef")
-	)
-	(wire
-		(pts
-			(xy 128.27 26.67) (xy 73.66 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "526c2686-2397-44cc-854a-62cb25e70b6f")
 	)
 	(wire
 		(pts
@@ -3489,7 +3473,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 21.59) (xy 120.65 16.51)
+			(xy 120.65 20.32) (xy 120.65 16.51)
 		)
 		(stroke
 			(width 0)
@@ -3516,16 +3500,6 @@
 			(type default)
 		)
 		(uuid "9d2c5c5d-a76d-4af6-99fc-938c3edcf7ef")
-	)
-	(wire
-		(pts
-			(xy 128.27 26.67) (xy 128.27 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1d96e92-e094-4710-a3ee-c4b57a7e4cfb")
 	)
 	(wire
 		(pts
@@ -3589,6 +3563,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 25.4) (xy 128.27 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1bbdc67-1fe2-4f74-a7ae-a47bd0c30450")
+	)
+	(wire
+		(pts
 			(xy 73.66 83.82) (xy 73.66 88.9)
 		)
 		(stroke
@@ -3606,6 +3590,16 @@
 			(type default)
 		)
 		(uuid "b42362b5-9d8f-44d9-951d-0fcb06cdcf9b")
+	)
+	(wire
+		(pts
+			(xy 73.66 26.67) (xy 157.48 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b588b608-f777-4be4-b852-d1c41ebebbd5")
 	)
 	(wire
 		(pts
@@ -3966,16 +3960,6 @@
 			(type default)
 		)
 		(uuid "fe91293c-98bd-4f9c-a615-3eec0854bffb")
-	)
-	(wire
-		(pts
-			(xy 157.48 26.67) (xy 128.27 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffd0a9f8-ab80-4494-84df-f256c5af577d")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7588,7 +7572,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BAT54C")
-		(at 128.27 21.59 0)
+		(at 128.27 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7599,7 +7583,7 @@
 		(fields_autoplaced yes)
 		(uuid "b08230da-a078-484a-82a0-484951703899")
 		(property "Reference" "D2"
-			(at 128.27 15.24 0)
+			(at 128.27 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7609,7 +7593,7 @@
 			)
 		)
 		(property "Value" "BAT54C"
-			(at 128.27 17.78 0)
+			(at 128.27 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7619,7 +7603,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 130.175 18.415 0)
+			(at 130.175 17.145 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7631,7 +7615,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds11005.pdf"
-			(at 126.238 21.59 0)
+			(at 126.238 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7642,7 +7626,7 @@
 			)
 		)
 		(property "Description" "dual schottky barrier diode, common cathode"
-			(at 128.27 21.59 0)
+			(at 128.27 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

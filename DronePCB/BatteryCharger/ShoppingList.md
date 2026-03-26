@@ -53,3 +53,5 @@
 [RAC, RSR Resistor x2](https://www.digikey.com/en/products/detail/ohmite/LVM12FTR010E-TR/16838338) $0.05
 
 [Ri Resistor x1](https://www.digikey.com/en/products/detail/yageo/RC1210FR-072RL/5919486) $0.10
+
+Total: $14.26

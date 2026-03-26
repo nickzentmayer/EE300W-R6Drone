@@ -44,8 +44,6 @@
 
 [R9 Resistor x1](https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FT10R0/1759594) $0.10
 
-[R12 Resistor x1]
-
 [R13 Resistor x1]
 
 [R14 Resistor x1]

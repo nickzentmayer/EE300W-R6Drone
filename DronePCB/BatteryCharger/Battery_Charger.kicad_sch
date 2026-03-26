@@ -2584,12 +2584,6 @@
 		(uuid "1027761f-b564-4628-beaa-4e7bbe2f86cd")
 	)
 	(junction
-		(at 124.46 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "11be4956-feff-4874-963d-6499f2875cec")
-	)
-	(junction
 		(at 25.4 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2600,6 +2594,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e44fd16-d4d9-4a88-85bf-4216cbb429b9")
+	)
+	(junction
+		(at 124.46 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c8a46b5-459c-4080-b53f-eb172879cd8d")
 	)
 	(junction
 		(at 144.78 82.55)
@@ -3099,6 +3099,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 60.96) (xy 124.46 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e225c98-7d79-4f63-ab76-f6daf9826345")
+	)
+	(wire
+		(pts
 			(xy 152.4 97.79) (xy 152.4 99.06)
 		)
 		(stroke
@@ -3136,6 +3146,16 @@
 			(type default)
 		)
 		(uuid "47601470-4bde-4efb-86ad-94445e497e54")
+	)
+	(wire
+		(pts
+			(xy 121.92 58.42) (xy 121.92 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "486de18b-66a9-4f7a-8629-c26d14ac4f69")
 	)
 	(wire
 		(pts
@@ -3179,16 +3199,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 58.42) (xy 121.92 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "531abae8-23af-4b94-8f0e-de9560b8d186")
-	)
-	(wire
-		(pts
 			(xy 144.78 82.55) (xy 135.89 82.55)
 		)
 		(stroke
@@ -3216,16 +3226,6 @@
 			(type default)
 		)
 		(uuid "57cd81f7-4acd-46dc-995d-d21499f7326b")
-	)
-	(wire
-		(pts
-			(xy 121.92 60.96) (xy 124.46 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "594d7871-e21f-4235-b55a-bc5e10756fb4")
 	)
 	(wire
 		(pts
@@ -3266,16 +3266,6 @@
 			(type default)
 		)
 		(uuid "60231367-b982-4d53-b9a2-6f5905aeab32")
-	)
-	(wire
-		(pts
-			(xy 119.38 58.42) (xy 121.92 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6481a7a6-e2e1-4825-bdf0-26be6a9e69d5")
 	)
 	(wire
 		(pts
@@ -3946,6 +3936,16 @@
 			(type default)
 		)
 		(uuid "fb885c9c-2677-496b-837a-d2b302b829e2")
+	)
+	(wire
+		(pts
+			(xy 119.38 58.42) (xy 121.92 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd32d952-f57c-4f5f-a38f-88d28084585a")
 	)
 	(wire
 		(pts
@@ -4683,10 +4683,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc138")
+			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc137")
 		)
 		(pin "2"
-			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b6")
+			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b5")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -4922,10 +4922,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e1")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5667")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -5140,10 +5140,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e2")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5668")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -5219,10 +5219,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c84")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697dc")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -5300,10 +5300,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c85")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697dd")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -6038,10 +6038,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c86")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697de")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -6277,10 +6277,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c87")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697df")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -6523,10 +6523,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e3")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5669")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -6605,10 +6605,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e4")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b566a")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -6847,10 +6847,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc139")
+			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc137")
 		)
 		(pin "2"
-			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b7")
+			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b5")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7245,10 +7245,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e5")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b566b")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7327,10 +7327,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c88")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697e0")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7408,10 +7408,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c89")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697e1")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7490,10 +7490,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e6")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b566c")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7572,10 +7572,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c8a")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697e2")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7820,13 +7820,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "552c5425-98a9-4896-b31c-d5edb27abd17")
+			(uuid "552c5425-98a9-4896-b31c-d5edb27abd16")
 		)
 		(pin "3"
-			(uuid "40556859-23cd-436c-9f9d-7f9cb291f3f3")
+			(uuid "40556859-23cd-436c-9f9d-7f9cb291f3f2")
 		)
 		(pin "2"
-			(uuid "ddf89fbf-9f1a-4926-ae0a-d60083395d9f")
+			(uuid "ddf89fbf-9f1a-4926-ae0a-d60083395d9e")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7902,10 +7902,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c8b")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697e3")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -7987,19 +7987,19 @@
 			)
 		)
 		(pin "5"
-			(uuid "a905d2bf-473b-45ac-b126-bfa9f0636f80")
+			(uuid "a905d2bf-473b-45ac-b126-bfa9f0636f7f")
 		)
 		(pin "2"
-			(uuid "f1cc4936-b8ba-4a60-9e59-9641abd48a9b")
+			(uuid "f1cc4936-b8ba-4a60-9e59-9641abd48a9a")
 		)
 		(pin "1"
-			(uuid "a1b1a70a-9223-4c7f-ac23-269b436dea9d")
+			(uuid "a1b1a70a-9223-4c7f-ac23-269b436dea9c")
 		)
 		(pin "3"
-			(uuid "2c2f77b7-e5d5-4981-8dd1-9f7a9a326fbe")
+			(uuid "2c2f77b7-e5d5-4981-8dd1-9f7a9a326fbd")
 		)
 		(pin "4"
-			(uuid "1ccf13d3-f291-4614-b459-99b98057df89")
+			(uuid "1ccf13d3-f291-4614-b459-99b98057df88")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8078,10 +8078,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e7")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b566d")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8159,10 +8159,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e8")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b566e")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8240,10 +8240,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c8c")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697e4")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8400,10 +8400,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc13a")
+			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc137")
 		)
 		(pin "2"
-			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b8")
+			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b5")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8641,10 +8641,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c8d")
+			(uuid "261d9a5b-a0c1-4408-bbf6-45804c708c83")
 		)
 		(pin "2"
-			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697e5")
+			(uuid "67866d8f-c325-4ea6-bafa-b961a0e697db")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8801,10 +8801,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52e9")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b566f")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8883,10 +8883,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f140103-a643-4f06-998c-78b2e26a52ea")
+			(uuid "3f140103-a643-4f06-998c-78b2e26a52e0")
 		)
 		(pin "2"
-			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5670")
+			(uuid "e50fdb8f-bb87-4463-a04e-abc83e5b5666")
 		)
 		(instances
 			(project "Battery_Charger"
@@ -8962,10 +8962,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc13b")
+			(uuid "42cf42a6-2744-4f1f-ac47-0cc5c96bc137")
 		)
 		(pin "2"
-			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b9")
+			(uuid "96df7d24-f1ae-4f7f-be1a-263902f1f5b5")
 		)
 		(instances
 			(project "Battery_Charger"

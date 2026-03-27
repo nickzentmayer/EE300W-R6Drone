@@ -739,7 +739,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:Earth"
+		(symbol "power:GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -764,7 +764,7 @@
 					)
 				)
 			)
-			(property "Value" "Earth"
+			(property "Value" "GND"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -796,7 +796,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -807,7 +807,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global ground gnd"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -818,46 +818,10 @@
 					)
 				)
 			)
-			(symbol "Earth_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -868,7 +832,7 @@
 					)
 				)
 			)
-			(symbol "Earth_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -1125,57 +1089,31 @@
 		)
 		(uuid "ff766c73-854e-4ae4-985c-1b3aa92198f2")
 	)
-	(global_label "Vout"
+	(hierarchical_label "+5V"
 		(shape input)
 		(at 184.15 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "5136afdb-8cf3-4e2c-96a6-094c1f269a42")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.2475 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "5927c33d-a739-478a-bcdc-2d36288f62cd")
 	)
-	(global_label "Vin"
+	(hierarchical_label "VIN"
 		(shape input)
 		(at 93.98 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "929fd670-87f9-4612-a4c7-3bd370e646b9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.1524 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "fb149027-f993-45e8-8440-142cc708e0e6")
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 177.8 76.2 0)
+		(lib_id "power:GND")
+		(at 133.35 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1184,9 +1122,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3f263902-40da-483a-a94b-6fc4db009a6c")
-		(property "Reference" "#PWR03"
-			(at 177.8 82.55 0)
+		(uuid "39c4995f-c996-410b-abf9-c468cc52e07e")
+		(property "Reference" "#PWR032"
+			(at 133.35 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1196,9 +1134,8 @@
 				)
 			)
 		)
-		(property "Value" "Earth"
-			(at 177.8 81.28 0)
-			(hide yes)
+		(property "Value" "GND"
+			(at 133.35 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1208,7 +1145,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 76.2 0)
+			(at 133.35 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1219,7 +1156,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 76.2 0)
+			(at 133.35 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1229,87 +1166,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 177.8 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cebf2034-e2c8-4978-9def-0276173c57bd")
-		)
-		(instances
-			(project "Buck Converter"
-				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 154.94 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4122d445-6ec7-4f60-92a7-b94cacd8f00a")
-		(property "Reference" "#PWR06"
-			(at 154.94 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 154.94 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 154.94 82.55 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1320,12 +1178,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1b0e7c54-2a31-4c76-a8f9-27d1e6ad364c")
+			(uuid "1b3ce5c4-ec1a-43d4-90f6-788a1ab629f7")
 		)
 		(instances
-			(project "Buck Converter"
-				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
-					(reference "#PWR06")
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -1343,7 +1201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "432faac7-1941-4787-ae66-6f47fc25537f")
-		(property "Reference" "C5"
+		(property "Reference" "C27"
 			(at 154.94 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1403,87 +1261,15 @@
 			(uuid "6be871fa-2659-4737-a4b8-680125345118")
 		)
 		(instances
-			(project "Buck Converter"
-				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
-					(reference "C5")
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C27")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 63.5 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58a21c05-f4c7-4b98-9776-1af61dbc1fef")
-		(property "Reference" "#PWR01"
-			(at 63.5 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 63.5 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 63.5 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "75e7e5c1-7a76-4928-914b-2f672ab68819")
-		)
-		(instances
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
-					(reference "#PWR01")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -1500,7 +1286,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59c62dcd-aaa3-41bc-b37e-3e264a601601")
-		(property "Reference" "R2"
+		(property "Reference" "R25"
 			(at 150.368 77.216 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1562,9 +1348,93 @@
 			(uuid "da36860e-4a69-4a9a-a46b-e7a1d8500ab4")
 		)
 		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "R25")
+					(unit 1)
+				)
+			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 107.95 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88954845-0a94-4580-9303-80d9b6e22d72")
+		(property "Reference" "#PWR031"
+			(at 107.95 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8be31536-7a83-4fee-9a4d-0493b58225b9")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -1582,7 +1452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95b8c326-66c7-4793-a539-ae897e1bb83a")
-		(property "Reference" "C4"
+		(property "Reference" "C28"
 			(at 181.61 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1644,6 +1514,12 @@
 			(uuid "c0bc4885-2458-4999-b523-b728eb05da80")
 		)
 		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C28")
+					(unit 1)
+				)
+			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "C4")
@@ -1663,7 +1539,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "99154967-549f-4c3b-9766-37fc8a393c38")
-		(property "Reference" "R1"
+		(property "Reference" "R26"
 			(at 158.75 76.454 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1723,6 +1599,12 @@
 			(uuid "2f65c146-2cc0-4071-b20c-09697d7d9998")
 		)
 		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "R26")
+					(unit 1)
+				)
+			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "R1")
@@ -1732,8 +1614,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 107.95 77.47 0)
+		(lib_id "power:GND")
+		(at 154.94 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1742,9 +1624,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a63c6f4e-cab4-490a-a481-4b27d693e808")
-		(property "Reference" "#PWR02"
-			(at 107.95 83.82 0)
+		(uuid "a27defc7-2454-4b66-a5a3-b48a747feb45")
+		(property "Reference" "#PWR033"
+			(at 154.94 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1754,9 +1636,8 @@
 				)
 			)
 		)
-		(property "Value" "Earth"
-			(at 107.95 82.55 0)
-			(hide yes)
+		(property "Value" "GND"
+			(at 154.94 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1766,7 +1647,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 77.47 0)
+			(at 154.94 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1777,7 +1658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 77.47 0)
+			(at 154.94 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1787,87 +1668,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 107.95 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6f8070f7-09d8-46fd-883f-62a027b92f63")
-		)
-		(instances
-			(project "Buck Converter"
-				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 133.35 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6af9aa5-5366-4ed5-94d8-fc0a30c9fc22")
-		(property "Reference" "#PWR04"
-			(at 133.35 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 133.35 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 133.35 80.01 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1878,12 +1680,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c08d4bc9-6e6c-4e55-8f24-51ed3a99171f")
+			(uuid "c06865ab-a6e2-48f4-b627-39e7b9f51879")
 		)
 		(instances
-			(project "Buck Converter"
-				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
-					(reference "#PWR04")
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -1901,7 +1703,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adc78414-34ca-48de-bafe-a9b159bdbc02")
-		(property "Reference" "U1"
+		(property "Reference" "U6"
 			(at 133.35 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1982,6 +1784,12 @@
 			(uuid "0d22f150-7f79-4e3b-b98d-ebe9ee9c7875")
 		)
 		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "U6")
+					(unit 1)
+				)
+			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "U1")
@@ -2001,7 +1809,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "af9dde14-f47e-4c29-ae40-81fc9fdbe73d")
-		(property "Reference" "C2"
+		(property "Reference" "C26"
 			(at 116.84 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2063,6 +1871,12 @@
 			(uuid "4516abc8-1bb1-4a4e-b4bd-41996eeaf59c")
 		)
 		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C26")
+					(unit 1)
+				)
+			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "C2")
@@ -2083,7 +1897,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba9ea0b4-5213-4fea-8f08-2b6c7661ca43")
-		(property "Reference" "L1"
+		(property "Reference" "L5"
 			(at 170.18 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2143,9 +1957,93 @@
 			(uuid "a5a5917c-41fc-4d96-abb7-d77a85c86cec")
 		)
 		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "L5")
+					(unit 1)
+				)
+			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8acd12e-2ae6-4089-b530-099cb32b497d")
+		(property "Reference" "#PWR034"
+			(at 177.8 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a52ab28b-79d4-4778-9cfc-882ff48d1f34")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -2163,7 +2061,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d972b4ed-725a-4e8c-aec8-6b178c9e7580")
-		(property "Reference" "C1"
+		(property "Reference" "C25"
 			(at 105.41 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2225,6 +2123,12 @@
 			(uuid "e28c7d74-2530-48d4-91a3-8020f5f8ef32")
 		)
 		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C25")
+					(unit 1)
+				)
+			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "C1")
@@ -2233,10 +2137,4 @@
 			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )

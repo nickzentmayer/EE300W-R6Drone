@@ -638,7 +638,7 @@
         "uuid": "c9b74494-ac48-4f27-9459-39f0e04d9d05"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C29,#PWR19,#PWR46-48,D3-10,Q6-7,J9,R27-32,U7",
     "variants": []
   },
   "sheets": [
@@ -653,6 +653,22 @@
     [
       "93a7ea6a-fcf4-476b-8d2c-922c1c402e60",
       "I2S Microphone"
+    ],
+    [
+      "b563f2de-ba2f-4924-a11a-850223cf8beb",
+      "Battery Charger"
+    ],
+    [
+      "59dcabd2-13f8-43f8-9fec-3f0511ac7fcb",
+      "USB_PD"
+    ],
+    [
+      "a1c98057-a35a-4f76-997d-d93fb4728c5b",
+      "Buck Converter"
+    ],
+    [
+      "3ee54b6d-b171-4c99-9842-f11b3399863d",
+      "IR Transciever"
     ]
   ],
   "text_variables": {},

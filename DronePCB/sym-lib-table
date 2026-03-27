@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "CC1101RGPR") (type "KiCad") (uri "${KIPRJMOD}/ExternalParts/CC1101RGPR.kicad_sym") (options "") (descr ""))
+	(lib (name "DMM-4026-B-I2S-R") (type "KiCad") (uri "${KIPRJMOD}/ExternalParts/DMM-4026-B-I2S-R.kicad_sym") (options "") (descr ""))
+	(lib (name "RASPBERRY_PI_ZERO_2_W") (type "KiCad") (uri "${KIPRJMOD}/ExternalParts/RASPBERRY_PI_ZERO_2_W.kicad_sym") (options "") (descr ""))
+)

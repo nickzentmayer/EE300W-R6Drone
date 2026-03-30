@@ -1115,7 +1115,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0d7311db-8fff-4a25-9f82-9db209b23989")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 167.64 96.012 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1135,7 +1135,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 171.45 91.1352 0)
 			(hide yes)
 			(show_name no)
@@ -1177,7 +1177,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/93a7ea6a-fcf4-476b-8d2c-922c1c402e60"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -1215,7 +1215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DMM-4026-B-I2S-R:MIC_DMM-4026-B-I2S-R"
+		(property "Footprint" "ExternalParts:MIC_DMM-4026-B-I2S-R"
 			(at 138.43 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -1423,7 +1423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "229e65d6-1a11-4c63-92b7-ab2ce93b88c2")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR022"
 			(at 119.38 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -1483,7 +1483,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/93a7ea6a-fcf4-476b-8d2c-922c1c402e60"
-					(reference "#PWR011")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -1501,7 +1501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b7d931b-d125-4b8b-be11-6595e6802ee6")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR025"
 			(at 173.99 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -1561,7 +1561,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/93a7ea6a-fcf4-476b-8d2c-922c1c402e60"
-					(reference "#PWR010")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -1579,7 +1579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7028dbf8-d247-4cf1-99a9-f7b7f70607df")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR023"
 			(at 157.48 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -1639,7 +1639,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/93a7ea6a-fcf4-476b-8d2c-922c1c402e60"
-					(reference "#PWR09")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -1657,7 +1657,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ea61613-01e6-4fb1-84cd-11a5a6881e5c")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR024"
 			(at 173.99 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1717,7 +1717,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/93a7ea6a-fcf4-476b-8d2c-922c1c402e60"
-					(reference "#PWR012")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -1735,7 +1735,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fd093c3-74b0-4993-9c6a-bdd4453510f7")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 176.53 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1757,7 +1757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 175.006 103.124 90)
 			(hide yes)
 			(show_name no)
@@ -1799,7 +1799,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/93a7ea6a-fcf4-476b-8d2c-922c1c402e60"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -1817,7 +1817,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c3f08966-f319-4043-a3d4-325c6a3c5e49")
-		(property "Reference" "C17"
+		(property "Reference" "C16"
 			(at 167.64 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1837,7 +1837,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 171.45 82.8548 0)
 			(hide yes)
 			(show_name no)
@@ -1879,7 +1879,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/93a7ea6a-fcf4-476b-8d2c-922c1c402e60"
-					(reference "C17")
+					(reference "C16")
 					(unit 1)
 				)
 			)

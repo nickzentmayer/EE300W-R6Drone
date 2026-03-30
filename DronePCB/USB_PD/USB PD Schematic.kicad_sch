@@ -1794,7 +1794,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:Earth"
+		(symbol "power:GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -1819,7 +1819,7 @@
 					)
 				)
 			)
-			(property "Value" "Earth"
+			(property "Value" "GND"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1851,7 +1851,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1862,7 +1862,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global ground gnd"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1873,46 +1873,10 @@
 					)
 				)
 			)
-			(symbol "Earth_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1923,7 +1887,7 @@
 					)
 				)
 			)
-			(symbol "Earth_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -1983,16 +1947,10 @@
 		(uuid "3d1bc633-0145-471b-8423-b28c2078df01")
 	)
 	(junction
-		(at 173.99 46.99)
+		(at 173.99 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4cf90e65-d135-4059-9495-61ec03dc61f4")
-	)
-	(junction
-		(at 22.86 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4dcf7f1f-c819-4150-9d29-d4b949bef75f")
+		(uuid "48bd0872-bf27-4cf2-974b-0c9f216bb82f")
 	)
 	(junction
 		(at 209.55 107.95)
@@ -2005,12 +1963,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "599869e2-e08d-492e-969d-a3fd523190cf")
-	)
-	(junction
-		(at 173.99 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f8ca533-415f-4b9e-902e-86f2542109bc")
 	)
 	(junction
 		(at 165.1 44.45)
@@ -2031,16 +1983,16 @@
 		(uuid "7daaeb46-a3bc-4034-97cf-dd487607870b")
 	)
 	(junction
+		(at 173.99 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83646088-0680-461b-ab4f-669287292cd9")
+	)
+	(junction
 		(at 43.18 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8537fdaf-e675-4679-bc3b-c8ab2c192460")
-	)
-	(junction
-		(at 109.22 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85852281-333a-4970-a8f8-a61dbe475326")
 	)
 	(junction
 		(at 222.25 107.95)
@@ -2083,6 +2035,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c55b42a4-b5b2-48e8-b440-ba0b84b9e92e")
+	)
+	(junction
+		(at 40.64 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c952e946-df55-4ed9-adfa-bb3f6796f947")
 	)
 	(junction
 		(at 181.61 46.99)
@@ -2289,6 +2247,26 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 69.85) (xy 40.64 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aacb9f7-42d0-4df9-9445-4c592b9a1495")
+	)
+	(wire
+		(pts
+			(xy 173.99 64.77) (xy 184.15 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c7b066d-8788-4547-98b5-99f18a84c0b7")
+	)
+	(wire
+		(pts
 			(xy 100.33 86.36) (xy 109.22 86.36)
 		)
 		(stroke
@@ -2309,6 +2287,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 104.14) (xy 109.22 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30da728b-ccfb-4326-aa15-430b370d6e31")
+	)
+	(wire
+		(pts
 			(xy 22.86 120.65) (xy 22.86 123.19)
 		)
 		(stroke
@@ -2316,6 +2304,16 @@
 			(type default)
 		)
 		(uuid "347f5109-3877-4654-a2fe-10f2d6085067")
+	)
+	(wire
+		(pts
+			(xy 40.64 69.85) (xy 44.45 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38101307-8b33-41e8-aeb3-d996fd24b218")
 	)
 	(wire
 		(pts
@@ -2563,26 +2561,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 46.99) (xy 181.61 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79c40b2f-e268-45c5-888f-345270d7f0cc")
-	)
-	(wire
-		(pts
-			(xy 184.15 64.77) (xy 173.99 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a2870b4-861e-4f2f-b35c-ba5485bd3c94")
-	)
-	(wire
-		(pts
 			(xy 165.1 41.91) (xy 165.1 44.45)
 		)
 		(stroke
@@ -2621,6 +2599,16 @@
 			(type default)
 		)
 		(uuid "817af70b-bb76-4659-a277-c94b557cf142")
+	)
+	(wire
+		(pts
+			(xy 173.99 46.99) (xy 181.61 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81e50e33-7989-4817-8347-d0e619b1566f")
 	)
 	(wire
 		(pts
@@ -2675,6 +2663,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 69.85) (xy 36.83 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e05ca16-7b2d-4b9a-9a79-02dfb002988d")
+	)
+	(wire
+		(pts
 			(xy 22.86 90.17) (xy 29.21 90.17)
 		)
 		(stroke
@@ -2695,13 +2693,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 104.14) (xy 110.49 104.14)
+			(xy 44.45 69.85) (xy 44.45 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94788404-b8d9-4037-b9de-a679dd4a55b3")
+		(uuid "979b2060-d4c8-416c-b6bb-2c7238856f14")
 	)
 	(wire
 		(pts
@@ -2743,6 +2741,16 @@
 			(type default)
 		)
 		(uuid "a1235b36-d50d-49cc-a55d-716acd4782a1")
+	)
+	(wire
+		(pts
+			(xy 43.18 134.62) (xy 43.18 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a224a4c5-0ed8-4e9c-84d9-b90cefb6713b")
 	)
 	(wire
 		(pts
@@ -2794,6 +2802,16 @@
 			(type default)
 		)
 		(uuid "acd1eb9e-3f89-4381-ae88-e7f19fabd523")
+	)
+	(wire
+		(pts
+			(xy 189.23 83.82) (xy 186.69 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aed7ef19-faad-41f9-965d-fba9a805da1f")
 	)
 	(wire
 		(pts
@@ -2888,16 +2906,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 90.17) (xy 22.86 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0873cb5-5591-41a7-a178-fa3553154f2b")
-	)
-	(wire
-		(pts
 			(xy 22.86 123.19) (xy 27.94 123.19)
 		)
 		(stroke
@@ -2949,6 +2957,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 134.62) (xy 22.86 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d44e701f-f89f-49a1-8cdd-e299c8a3e5bb")
+	)
+	(wire
+		(pts
 			(xy 92.71 67.31) (xy 163.83 67.31)
 		)
 		(stroke
@@ -2976,6 +2994,16 @@
 			(type default)
 		)
 		(uuid "de5b27d4-9447-4af3-b46c-5a475dd899d5")
+	)
+	(wire
+		(pts
+			(xy 73.66 52.07) (xy 73.66 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfdeb84f-3304-41d5-a933-c1196ef05cb0")
 	)
 	(wire
 		(pts
@@ -3099,16 +3127,6 @@
 			(type default)
 		)
 		(uuid "f8e977cf-95fd-401c-a76d-305d3ddfd145")
-	)
-	(wire
-		(pts
-			(xy 105.41 104.14) (xy 109.22 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f97d1b38-10dc-4545-8705-f701bc6de9c2")
 	)
 	(global_label "Pin 2"
 		(shape input)
@@ -3402,8 +3420,8 @@
 		(uuid "ffb3c115-869a-46eb-bcf6-d4256fbf5aeb")
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 22.86 99.06 0)
+		(lib_id "power:GND")
+		(at 43.18 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3412,9 +3430,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0194d5f9-065b-4181-a5ed-117c1271ad71")
-		(property "Reference" "#PWR018"
-			(at 22.86 105.41 0)
+		(uuid "02dc884e-6ee5-4138-910c-aaa999d58ffa")
+		(property "Reference" "#PWR044"
+			(at 43.18 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3424,9 +3442,8 @@
 				)
 			)
 		)
-		(property "Value" "Earth"
-			(at 22.86 104.14 0)
-			(hide yes)
+		(property "Value" "GND"
+			(at 43.18 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3436,7 +3453,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 99.06 0)
+			(at 43.18 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3447,7 +3464,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 99.06 0)
+			(at 43.18 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3457,93 +3474,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 22.86 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a90d7c5d-da00-45f0-bf01-36b95b96a383")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 222.25 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0517d592-c891-4cb5-be9f-0e0bbc1112db")
-		(property "Reference" "#PWR023"
-			(at 222.25 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 222.25 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 222.25 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 222.25 115.57 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3554,18 +3486,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "157a1df6-3228-45fc-8e18-ca469daa2192")
+			(uuid "a026975e-4a88-49c5-b24e-7a3f23709f97")
 		)
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR023")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -3583,7 +3509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e1f18db-ee0d-4eca-81f3-570a3c1ede02")
-		(property "Reference" "C21"
+		(property "Reference" "C37"
 			(at 201.93 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3605,7 +3531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 199.0852 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3647,13 +3573,169 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "C21")
+					(reference "C37")
 					(unit 1)
 				)
 			)
 			(project "USB PD Schematic"
 				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 73.66 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13768e12-4acb-444e-b922-f1f0ab2cbaee")
+		(property "Reference" "#PWR042"
+			(at 73.66 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 73.66 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbce6860-8c02-42f2-91ad-041d5a6cf6ac")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 198.12 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14f18b98-951c-4702-9942-3282fc0e7909")
+		(property "Reference" "#PWR046"
+			(at 198.12 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 198.12 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "427aa2f6-11db-4e93-abfc-f0d0b16bb381")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -3671,7 +3753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16cb17ea-5fa0-4ed9-aad3-8c62fab6afb9")
-		(property "Reference" "C23"
+		(property "Reference" "C39"
 			(at 226.06 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3693,7 +3775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 223.2152 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3735,7 +3817,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "C23")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -3759,7 +3841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17d84b67-d093-47ea-8c6a-eaa549278fdc")
-		(property "Reference" "R16"
+		(property "Reference" "R20"
 			(at 45.72 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3781,7 +3863,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 44.958 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -3823,7 +3905,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R16")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -3836,8 +3918,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 209.55 115.57 0)
+		(lib_id "power:GND")
+		(at 222.25 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3846,9 +3928,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1edd20ac-4c8f-483b-8e12-20adf099945e")
-		(property "Reference" "#PWR022"
-			(at 209.55 121.92 0)
+		(uuid "22d42554-85a8-4a63-8c83-dce04f2ab186")
+		(property "Reference" "#PWR050"
+			(at 222.25 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3858,9 +3940,8 @@
 				)
 			)
 		)
-		(property "Value" "Earth"
-			(at 209.55 120.65 0)
-			(hide yes)
+		(property "Value" "GND"
+			(at 222.25 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3870,7 +3951,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 115.57 0)
+			(at 222.25 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3881,7 +3962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 115.57 0)
+			(at 222.25 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3891,93 +3972,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 209.55 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37d43293-a99c-42f0-8c6f-9e1f08841d54")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 43.18 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1fe1dbe0-6be3-498b-9e9a-cf3b0cea5e0f")
-		(property "Reference" "#PWR011"
-			(at 43.18 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 43.18 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 43.18 133.35 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 222.25 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3988,103 +3984,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4144a455-21d3-4307-ae77-b5b6302afdb7")
+			(uuid "2343b868-740a-437d-8f43-db921dad2d78")
 		)
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 22.86 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29e5defa-653f-4360-b65d-0e4086ccf606")
-		(property "Reference" "#PWR017"
-			(at 22.86 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 22.86 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 22.86 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f1988296-8349-4482-a03f-066db4313438")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR017")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -4102,7 +4007,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2afe7814-12ed-4bef-bab9-8c0094093134")
-		(property "Reference" "U4"
+		(property "Reference" "U5"
 			(at 143.51 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4122,7 +4027,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP_DMP3098LSD-13_DIO"
+		(property "Footprint" "ExternalParts:SOP_DMP3098LSD-13_DIO"
 			(at 163.83 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -4184,7 +4089,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -4197,8 +4102,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 22.86 95.25 0)
+		(lib_id "power:GND")
+		(at 40.64 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4206,32 +4111,30 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3779e675-9d6f-4296-897e-1e313cdc7e0b")
-		(property "Reference" "R4"
-			(at 25.4 93.9799 0)
+		(uuid "2b5edb02-7be8-4924-af18-1ec99a69d377")
+		(property "Reference" "#PWR045"
+			(at 40.64 76.2 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "5.1k"
-			(at 25.4 96.5199 0)
+		(property "Value" "GND"
+			(at 40.64 68.326 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 21.082 95.25 90)
+			(at 40.64 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4242,7 +4145,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 95.25 0)
+			(at 40.64 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4252,8 +4155,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 22.86 95.25 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4264,21 +4167,90 @@
 			)
 		)
 		(pin "1"
-			(uuid "ed036a36-dcec-40de-ad9d-e0fad3b2dc5f")
-		)
-		(pin "2"
-			(uuid "a0f0f5f1-98d6-42f1-91d8-e02715038c34")
+			(uuid "d6274ced-8587-4108-b8de-f61be75ddef2")
 		)
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R4")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "R9")
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 234.95 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34ac04b2-31eb-4b02-90b1-e557a8ce0ff4")
+		(property "Reference" "#PWR051"
+			(at 234.95 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0a471d6d-f1f6-4da8-8f9a-aff38bb521e7")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -4296,7 +4268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d0b0ee5-0322-4738-bcc9-65083015c8cd")
-		(property "Reference" "C19"
+		(property "Reference" "C35"
 			(at 109.22 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4318,7 +4290,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 106.3752 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4360,7 +4332,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "C19")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -4384,7 +4356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52937a40-9b52-4d83-bea5-afce154b4c0e")
-		(property "Reference" "R17"
+		(property "Reference" "R21"
 			(at 45.72 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4406,7 +4378,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 41.402 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -4448,7 +4420,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R17")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -4471,7 +4443,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60107f97-0af0-41e7-b2f4-64ee7b3d5d56")
-		(property "Reference" "R21"
+		(property "Reference" "R25"
 			(at 101.6 106.934 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4491,7 +4463,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 101.6 102.362 90)
 			(hide yes)
 			(show_name no)
@@ -4533,98 +4505,13 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R21")
+					(reference "R25")
 					(unit 1)
 				)
 			)
 			(project "USB PD Schematic"
 				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 73.66 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6df23159-6aa0-4b63-9821-3087de0796fd")
-		(property "Reference" "#PWR020"
-			(at 73.66 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 73.66 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 73.66 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "183d203d-adfb-45f5-8a89-c781fc1437b0")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -4641,7 +4528,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "740db5a7-6c2e-44f8-b31c-04a78cea605a")
-		(property "Reference" "R19"
+		(property "Reference" "R23"
 			(at 99.06 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4663,7 +4550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 94.742 46.99 90)
 			(hide yes)
 			(show_name no)
@@ -4705,7 +4592,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R19")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -4729,7 +4616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "779beb7e-de60-4a19-a912-d7c4bfe03a80")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR047"
 			(at 95.25 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4789,13 +4676,92 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR012")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
 			(project "USB PD Schematic"
 				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 81.28 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7dffd107-72d6-4d42-aa70-b56eb1e5afe2")
+		(property "Reference" "#PWR052"
+			(at 177.8 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 81.2799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59645cb8-bc25-4484-802f-9c7dd259c92e")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -4813,7 +4779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8905588d-60d7-428b-ba7c-9b8055d71b68")
-		(property "Reference" "U5"
+		(property "Reference" "U6"
 			(at 204.47 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4833,7 +4799,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP_DMP3098LSD-13_DIO"
+		(property "Footprint" "ExternalParts:SOP_DMP3098LSD-13_DIO"
 			(at 184.15 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -4895,7 +4861,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "U5")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -4908,8 +4874,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 186.69 83.82 90)
+		(lib_id "Device:R")
+		(at 22.86 83.82 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4918,21 +4884,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "985c9238-bb76-47ae-ba3f-65d79035330a")
-		(property "Reference" "#PWR013"
-			(at 193.04 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 190.5 83.8199 90)
-			(hide yes)
+		(uuid "95ea4354-b6e0-44c1-820a-171d1fc94b96")
+		(property "Reference" "R16"
+			(at 25.4 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4942,8 +4896,19 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 186.69 83.82 0)
+		(property "Value" "0"
+			(at 25.4 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 24.638 83.82 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4954,7 +4919,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 83.82 0)
+			(at 22.86 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4964,8 +4929,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 186.69 83.82 0)
+		(property "Description" "Resistor"
+			(at 22.86 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4976,18 +4941,93 @@
 			)
 		)
 		(pin "1"
-			(uuid "66844888-d33a-473a-9934-80d34a4d2c2e")
+			(uuid "6a9bee8f-cb03-410d-bbf6-0ccdaaaa6109")
+		)
+		(pin "2"
+			(uuid "f5975eb5-a3dc-4153-ade9-20a47d9aba58")
 		)
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR013")
+					(reference "R16")
 					(unit 1)
 				)
 			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR013")
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 22.86 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96ab38d8-9129-486b-bbf9-0c9253fb7dbb")
+		(property "Reference" "#PWR043"
+			(at 22.86 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 22.86 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b522b326-565a-4f6b-9264-7f779ec16d4a")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5005,7 +5045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98bcfa86-ac4f-4729-b8d7-7f4620ce5ab7")
-		(property "Reference" "R12"
+		(property "Reference" "R18"
 			(at 25.4 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5027,7 +5067,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 24.638 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -5069,183 +5109,13 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R12")
+					(reference "R18")
 					(unit 1)
 				)
 			)
 			(project "USB PD Schematic"
 				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 44.45 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b0d95ab-0e05-4072-9631-930844a6705d")
-		(property "Reference" "#PWR025"
-			(at 44.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 44.45 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 44.45 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "abbb60d3-c5bf-4e83-8d29-afcd00f3deca")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 234.95 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ecc5b93-aa65-4262-8f8a-cad3734cd518")
-		(property "Reference" "#PWR024"
-			(at 234.95 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 234.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 234.95 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "04347d0d-776c-4b80-b7a0-f8944bebdb66")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5263,7 +5133,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0c78a11-3dae-4092-a755-5ef0c270fbd2")
-		(property "Reference" "C18"
+		(property "Reference" "C34"
 			(at 77.47 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5285,7 +5155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 74.6252 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5327,7 +5197,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "C18")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -5351,7 +5221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a23e7eeb-fa6c-4b66-9d00-66561bc0266c")
-		(property "Reference" "C24"
+		(property "Reference" "C40"
 			(at 242.57 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5373,7 +5243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 239.7252 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -5415,7 +5285,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "C24")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -5439,7 +5309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a72d599c-5716-4dc0-9133-49820ecaeb72")
-		(property "Reference" "R20"
+		(property "Reference" "R24"
 			(at 96.52 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5459,7 +5329,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.52 84.582 90)
 			(hide yes)
 			(show_name no)
@@ -5501,7 +5371,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R20")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -5514,8 +5384,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 173.99 57.15 0)
+		(lib_id "power:GND")
+		(at 189.23 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5523,10 +5393,87 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "a915662b-22f5-417c-ab6d-7d00b6b2e5e8")
+		(property "Reference" "#PWR053"
+			(at 189.23 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 82.296 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 189.23 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94945e0d-62cd-4a51-bcff-d803c45e1ce7")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.99 57.15 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(uuid "ab3c8b1f-d52e-4666-afb0-3717714c990a")
-		(property "Reference" "R22"
-			(at 176.53 55.8799 0)
+		(property "Reference" "R26"
+			(at 171.45 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5537,7 +5484,7 @@
 			)
 		)
 		(property "Value" "49.9k"
-			(at 176.53 58.4199 0)
+			(at 171.45 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5547,8 +5494,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 172.212 57.15 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.768 57.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5589,7 +5536,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R22")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5613,7 +5560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b07f2310-d9af-4863-8a56-99bde2a6b005")
-		(property "Reference" "J1"
+		(property "Reference" "J9"
 			(at 44.45 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5633,7 +5580,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x_6P_TopMnt_Horizontal"
 			(at 48.26 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5690,7 +5637,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "J1")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -5714,7 +5661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1217515-aa38-4dac-8f8c-69919a96d7f9")
-		(property "Reference" "C22"
+		(property "Reference" "C38"
 			(at 213.36 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5736,7 +5683,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 210.5152 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -5778,184 +5725,13 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "C22")
+					(reference "C38")
 					(unit 1)
 				)
 			)
 			(project "USB PD Schematic"
 				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 171.45 81.28 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b46b6092-7a70-4529-960c-744b0d53ea95")
-		(property "Reference" "#PWR014"
-			(at 177.8 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 175.26 81.2799 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 171.45 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0643c6d2-a532-4aaa-be40-c6899e72e713")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 198.12 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be435d6d-2656-4cf7-a02d-44182483cb85")
-		(property "Reference" "#PWR021"
-			(at 198.12 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 198.12 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 198.12 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aeca17bc-d95b-4f2c-a374-054f93ba35a8")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5973,7 +5749,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf2ecccc-5caa-4dae-a86a-6ea6820b6e38")
-		(property "Reference" "R18"
+		(property "Reference" "R22"
 			(at 45.72 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5995,7 +5771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 44.958 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -6037,13 +5813,91 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R18")
+					(reference "R22")
 					(unit 1)
 				)
 			)
 			(project "USB PD Schematic"
 				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 209.55 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c609583e-59e3-4a4b-b12e-f7d7c9457950")
+		(property "Reference" "#PWR049"
+			(at 209.55 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 209.55 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 209.55 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30292fc2-7f5e-4d7c-a0f9-570087ac1789")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -6061,7 +5915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccc37009-ec96-4252-88a4-9fda5a09480b")
-		(property "Reference" "U3"
+		(property "Reference" "U4"
 			(at 139.7 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,7 +5935,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN24_CYPD3177-24LQXQT_INF"
+		(property "Footprint" "ExternalParts:QFN24_CYPD3177-24LQXQT_INF"
 			(at 109.22 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6194,7 +6048,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "U3")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -6218,7 +6072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8f3d54a-5121-4302-a1cd-72c9083b4d2d")
-		(property "Reference" "C20"
+		(property "Reference" "C36"
 			(at 182.88 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6238,7 +6092,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 179.07 84.7852 0)
 			(hide yes)
 			(show_name no)
@@ -6280,101 +6134,13 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "C20")
+					(reference "C36")
 					(unit 1)
 				)
 			)
 			(project "USB PD Schematic"
 				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 22.86 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfdf2e24-40fa-4af8-9445-2be6693e226b")
-		(property "Reference" "R3"
-			(at 25.4 82.5499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 25.4 85.0899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 21.082 83.82 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 22.86 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e96e72a7-df57-458b-86f2-029cb81f1469")
-		)
-		(pin "2"
-			(uuid "8d84296f-0ba4-4bd0-a9b2-24b8c5f49e4c")
-		)
-		(instances
-			(project "DronePCB"
-				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-			(project "USB PD Schematic"
-				(path "/e2eb9572-bc5f-4391-92b6-00bd779da042"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6392,7 +6158,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f38baef1-0f7c-42d9-a465-9839fb366afb")
-		(property "Reference" "R13"
+		(property "Reference" "R19"
 			(at 25.4 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6414,7 +6180,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 24.638 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -6456,7 +6222,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/59dcabd2-13f8-43f8-9fec-3f0511ac7fcb"
-					(reference "R13")
+					(reference "R19")
 					(unit 1)
 				)
 			)

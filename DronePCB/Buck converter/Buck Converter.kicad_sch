@@ -855,6 +855,32 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "1.4MHz fsw"
+		(exclude_from_sim no)
+		(at 133.096 53.086 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "047a8a21-575a-493b-9a6b-4928d76d8540")
+	)
+	(text "1.2A max\n\nused 0.8A as nominal\ncurrent output"
+		(exclude_from_sim no)
+		(at 181.102 60.706 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5333e98c-548a-44c9-8eb6-9cd0f99473ba")
+	)
+	(junction
+		(at 212.09 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05da628e-ef2c-4928-9ab0-6c3475de0ce2")
+	)
 	(junction
 		(at 107.95 72.39)
 		(diameter 0)
@@ -868,22 +894,52 @@
 		(uuid "32bbf209-898d-4503-a5a0-4894fb278ca7")
 	)
 	(junction
+		(at 177.8 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "419b0dcd-5ebc-44a1-acb0-f6658de7283e")
+	)
+	(junction
+		(at 177.8 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87d04a10-5347-4dce-b602-7f6c51f0f984")
+	)
+	(junction
+		(at 189.23 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "972ce83f-1bff-420a-a0d8-327abdabe221")
+	)
+	(junction
+		(at 200.66 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bf44f00-4343-465f-bbb5-38f15b17bf90")
+	)
+	(junction
 		(at 166.37 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8e957f3-8073-4256-8b4a-7f2467cc5aa1")
 	)
 	(junction
-		(at 177.8 68.58)
+		(at 200.66 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "db6e713b-41a2-456a-a7a3-0867cdebbd8f")
+		(uuid "e52ec891-7317-4e7f-9b94-21940a9efe71")
 	)
 	(junction
 		(at 173.99 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e590a0ca-5466-4eee-9334-6363493f1b63")
+	)
+	(junction
+		(at 189.23 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee3657f0-2eb1-4b83-b0a9-5116d8458f6a")
 	)
 	(junction
 		(at 101.6 64.77)
@@ -896,10 +952,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd8375bc-cd23-4a17-9c09-4b4e4d71bc0d")
-	)
-	(no_connect
-		(at 123.19 74.93)
-		(uuid "473e7e67-d293-45b8-9a6d-24ff3bb539a2")
 	)
 	(no_connect
 		(at 143.51 74.93)
@@ -941,6 +993,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 74.93) (xy 123.19 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3540ee61-cd84-426a-9d29-e70ea20bd9ab")
+	)
+	(wire
+		(pts
 			(xy 101.6 72.39) (xy 107.95 72.39)
 		)
 		(stroke
@@ -968,6 +1030,16 @@
 			(type default)
 		)
 		(uuid "59fe9b75-58f4-4386-bef3-0d9dde45d2c8")
+	)
+	(wire
+		(pts
+			(xy 189.23 68.58) (xy 200.66 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83e3b373-a1ef-4a50-b24c-bf7fdd059011")
 	)
 	(wire
 		(pts
@@ -1001,6 +1073,36 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 83.82) (xy 120.65 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b09bc58b-a093-4d3b-af5e-9111365d3d53")
+	)
+	(wire
+		(pts
+			(xy 177.8 76.2) (xy 189.23 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2bc7c6c-0edb-4ae0-9ce4-12061c466582")
+	)
+	(wire
+		(pts
+			(xy 200.66 76.2) (xy 212.09 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8a5886d-aa91-439e-9344-bc840dd6ec02")
+	)
+	(wire
+		(pts
 			(xy 154.94 72.39) (xy 154.94 74.93)
 		)
 		(stroke
@@ -1021,13 +1123,23 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 68.58) (xy 184.15 68.58)
+			(xy 177.8 68.58) (xy 189.23 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bf6124c6-4f7c-4d55-baa8-8a83555a8646")
+	)
+	(wire
+		(pts
+			(xy 189.23 76.2) (xy 200.66 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c010b5f9-d00a-4228-aa41-5f25abd9fb38")
 	)
 	(wire
 		(pts
@@ -1071,6 +1183,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 68.58) (xy 212.09 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5056d41-2ba7-4a62-b44e-13afa846f85a")
+	)
+	(wire
+		(pts
 			(xy 173.99 68.58) (xy 177.8 68.58)
 		)
 		(stroke
@@ -1078,6 +1200,16 @@
 			(type default)
 		)
 		(uuid "e91aa58a-0e77-45c5-a8e7-f542626b398f")
+	)
+	(wire
+		(pts
+			(xy 212.09 68.58) (xy 215.9 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc66fc63-0365-4969-a8f5-eb6bba7604fd")
 	)
 	(wire
 		(pts
@@ -1091,7 +1223,7 @@
 	)
 	(hierarchical_label "+5V"
 		(shape input)
-		(at 184.15 68.58 0)
+		(at 215.9 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1112,6 +1244,166 @@
 		(uuid "fb149027-f993-45e8-8440-142cc708e0e6")
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 200.66 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a25b234-a81d-49c0-8e7e-e4f5bc097f54")
+		(property "Reference" "C55"
+			(at 204.47 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 204.47 73.6599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 201.6252 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ad338a3-f7b3-4f14-87e8-66080bba34b8")
+		)
+		(pin "2"
+			(uuid "e0a2b20d-c611-4c65-8960-74c955c853ec")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 120.65 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b7c4f2d-5256-4d73-b13c-ab928ecd0139")
+		(property "Reference" "#PWR068"
+			(at 120.65 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35abcffb-a40b-4ecf-b5b5-24ffa1e17213")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 133.35 80.01 0)
 		(unit 1)
@@ -1123,7 +1415,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39c4995f-c996-410b-abf9-c468cc52e07e")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR055"
 			(at 133.35 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -1183,7 +1475,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "#PWR032")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -1201,7 +1493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "432faac7-1941-4787-ae66-6f47fc25537f")
-		(property "Reference" "C27"
+		(property "Reference" "C43"
 			(at 154.94 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1221,7 +1513,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 151.13 65.7352 0)
 			(hide yes)
 			(show_name no)
@@ -1263,7 +1555,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "C27")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -1286,7 +1578,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59c62dcd-aaa3-41bc-b37e-3e264a601601")
-		(property "Reference" "R25"
+		(property "Reference" "R27"
 			(at 150.368 77.216 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1308,7 +1600,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.162 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -1350,13 +1642,95 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "R25")
+					(reference "R27")
 					(unit 1)
 				)
 			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 120.65 78.74 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "67a7716a-2465-47a2-b09c-f20f188743cf")
+		(property "Reference" "C57"
+			(at 116.84 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 116.84 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 119.6848 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 120.65 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0af6de8-dd79-45cc-b9a3-c978c07af7bd")
+		)
+		(pin "2"
+			(uuid "d6db8920-4d6c-459d-ab13-7f77eabea414")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -1374,7 +1748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88954845-0a94-4580-9303-80d9b6e22d72")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR054"
 			(at 107.95 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1434,7 +1808,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "#PWR031")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -1452,7 +1826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95b8c326-66c7-4793-a539-ae897e1bb83a")
-		(property "Reference" "C28"
+		(property "Reference" "C44"
 			(at 181.61 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1463,7 +1837,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4x22uF"
+		(property "Value" "22uF"
 			(at 181.61 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1474,7 +1848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 178.7652 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1516,7 +1890,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "C28")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -1539,7 +1913,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "99154967-549f-4c3b-9766-37fc8a393c38")
-		(property "Reference" "R26"
+		(property "Reference" "R28"
 			(at 158.75 76.454 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1559,7 +1933,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 158.75 70.612 90)
 			(hide yes)
 			(show_name no)
@@ -1601,7 +1975,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "R26")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -1625,7 +1999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a27defc7-2454-4b66-a5a3-b48a747feb45")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR056"
 			(at 154.94 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1685,7 +2059,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "#PWR033")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -1703,7 +2077,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adc78414-34ca-48de-bafe-a9b159bdbc02")
-		(property "Reference" "U6"
+		(property "Reference" "U7"
 			(at 133.35 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1713,7 +2087,7 @@
 				)
 			)
 		)
-		(property "Value" "LMR33630ADDA"
+		(property "Value" "LMR33630BDDA"
 			(at 133.35 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1786,7 +2160,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "U6")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -1809,7 +2183,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "af9dde14-f47e-4c29-ae40-81fc9fdbe73d")
-		(property "Reference" "C26"
+		(property "Reference" "C42"
 			(at 116.84 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1831,7 +2205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 113.9952 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1873,7 +2247,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "C26")
+					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -1897,7 +2271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba9ea0b4-5213-4fea-8f08-2b6c7661ca43")
-		(property "Reference" "L5"
+		(property "Reference" "L6"
 			(at 170.18 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1907,7 +2281,7 @@
 				)
 			)
 		)
-		(property "Value" "8uH"
+		(property "Value" "10uH"
 			(at 170.18 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1917,7 +2291,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-40xx"
 			(at 170.18 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -1959,7 +2333,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "L5")
+					(reference "L6")
 					(unit 1)
 				)
 			)
@@ -1983,7 +2357,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8acd12e-2ae6-4089-b530-099cb32b497d")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR057"
 			(at 177.8 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2043,7 +2417,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "#PWR034")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -2061,7 +2435,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d972b4ed-725a-4e8c-aec8-6b178c9e7580")
-		(property "Reference" "C25"
+		(property "Reference" "C41"
 			(at 105.41 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2083,7 +2457,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 102.5652 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -2125,13 +2499,177 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
-					(reference "C25")
+					(reference "C41")
 					(unit 1)
 				)
 			)
 			(project "Buck Converter"
 				(path "/da599647-27a6-48d3-bca9-b582fb52ca71"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 189.23 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7ba114f-32e5-4e8b-b4f0-fa222aa4c563")
+		(property "Reference" "C54"
+			(at 193.04 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 193.04 73.6599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 190.1952 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 189.23 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98293a9e-b74f-4db8-a194-08ce174e1cf4")
+		)
+		(pin "2"
+			(uuid "73a56a3c-5966-4ec6-9369-05f4cd09162f")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 212.09 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6e6e87c-d2cb-4999-86c3-7df3fa8f47c6")
+		(property "Reference" "C56"
+			(at 215.9 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 215.9 73.6599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 213.0552 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 212.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86a86f6d-dd95-40e0-a76f-6f7ce6fe7a3c")
+		)
+		(pin "2"
+			(uuid "bf591c1c-c113-492d-93cc-4dbbe236d7fd")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/a1c98057-a35a-4f76-997d-d93fb4728c5b"
+					(reference "C56")
 					(unit 1)
 				)
 			)

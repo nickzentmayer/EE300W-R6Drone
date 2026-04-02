@@ -2780,7 +2780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01fee7a3-7fb9-40d1-b91b-57e0c66a58f2")
-		(property "Reference" "R35"
+		(property "Reference" "R42"
 			(at 109.22 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2842,7 +2842,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R35")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -2860,7 +2860,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0eca42e6-0de4-4520-bc42-f3704a4179c6")
-		(property "Reference" "R37"
+		(property "Reference" "R44"
 			(at 109.22 127 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2922,7 +2922,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R37")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -2940,7 +2940,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1dc48c14-9d73-4933-b4b3-ad5af2471dbb")
-		(property "Reference" "Q8"
+		(property "Reference" "Q6"
 			(at 119.38 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3010,7 +3010,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "Q8")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -3028,7 +3028,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a4a4d3b-5984-4183-8e80-3d6ea6051821")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR069"
 			(at 181.61 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -3088,7 +3088,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "#PWR067")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -3208,7 +3208,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "3ce38b61-f0f6-4bf0-a3e3-2318cf87efbc")
-		(property "Reference" "C46"
+		(property "Reference" "C50"
 			(at 127 39.7509 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3272,7 +3272,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C46")
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -3290,7 +3290,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d667737-7199-4eb1-9214-c629528249f1")
-		(property "Reference" "R36"
+		(property "Reference" "R43"
 			(at 109.22 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3352,7 +3352,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R36")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -3451,7 +3451,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5083e29c-0e3a-4df0-b498-5cce09dbca31")
-		(property "Reference" "R50"
+		(property "Reference" "R39"
 			(at 104.14 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3515,7 +3515,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R50")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -3532,7 +3532,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "54fc5416-fcab-417e-8bdd-d0c612a20b95")
-		(property "Reference" "C48"
+		(property "Reference" "C52"
 			(at 146.05 39.7509 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3596,7 +3596,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C48")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -3614,7 +3614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a0b824c-6ef0-4025-9842-3fd55ca56f50")
-		(property "Reference" "R39"
+		(property "Reference" "R46"
 			(at 195.58 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3678,7 +3678,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R39")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -3696,7 +3696,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f362ec3-6be7-4486-84a8-585627c60fe9")
-		(property "Reference" "R38"
+		(property "Reference" "R45"
 			(at 109.22 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3758,7 +3758,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R38")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -3776,7 +3776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78139cec-fc00-4d4c-92ef-3ac3ef0da0dc")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR068"
 			(at 180.34 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -3836,7 +3836,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "#PWR066")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -3854,7 +3854,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c41e759-2ae3-4119-a12e-6bd578f1faac")
-		(property "Reference" "C51"
+		(property "Reference" "C55"
 			(at 158.75 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3918,7 +3918,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C51")
+					(reference "C55")
 					(unit 1)
 				)
 			)
@@ -4017,7 +4017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0782075-47c5-4b8c-8b78-6cf57d37aafa")
-		(property "Reference" "R40"
+		(property "Reference" "R47"
 			(at 196.85 147.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4081,7 +4081,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R40")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -4099,7 +4099,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6c652c9-579b-4bcc-8546-0c42f2f01193")
-		(property "Reference" "R45"
+		(property "Reference" "R36"
 			(at 83.82 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4161,7 +4161,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R45")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -4179,7 +4179,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a915f3a5-3253-4c66-8566-ebad0e08377a")
-		(property "Reference" "R42"
+		(property "Reference" "R37"
 			(at 87.63 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4241,7 +4241,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R42")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -4258,7 +4258,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9fec76a-349c-47cc-b12f-08d5f6edb1a4")
-		(property "Reference" "C53"
+		(property "Reference" "C57"
 			(at 172.72 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4322,7 +4322,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C53")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -4422,7 +4422,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be0be6df-a51f-49c8-b645-bae76dfb0489")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR067"
 			(at 162.56 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -4482,7 +4482,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "#PWR065")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -4499,7 +4499,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "ce3b021f-dfe9-4d07-9b32-292452ecb60e")
-		(property "Reference" "C47"
+		(property "Reference" "C51"
 			(at 133.35 117.2209 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4563,7 +4563,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C47")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -4581,7 +4581,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ceb03af8-6e16-47b1-8257-53f2f6501c9a")
-		(property "Reference" "C50"
+		(property "Reference" "C54"
 			(at 157.48 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4645,7 +4645,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C50")
+					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -4663,7 +4663,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0324abf-d6dd-4360-8c78-65089d1eb5ba")
-		(property "Reference" "Q10"
+		(property "Reference" "Q8"
 			(at 119.38 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4733,7 +4733,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "Q10")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -4853,7 +4853,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "defafbb6-4904-4a24-9c5f-a2c7b180df89")
-		(property "Reference" "C49"
+		(property "Reference" "C53"
 			(at 147.32 117.2209 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4917,7 +4917,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C49")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -4934,7 +4934,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f0c24218-3b4a-4d33-8b5c-5efdd1ff8430")
-		(property "Reference" "C52"
+		(property "Reference" "C56"
 			(at 171.45 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4998,7 +4998,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "C52")
+					(reference "C56")
 					(unit 1)
 				)
 			)
@@ -5015,7 +5015,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f39b0720-7a19-4c89-a4e9-f5dcbb60de13")
-		(property "Reference" "Q9"
+		(property "Reference" "Q7"
 			(at 119.38 69.8501 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5085,7 +5085,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "Q9")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -5103,7 +5103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f469ac74-7cc2-4876-842f-40451f9f449c")
-		(property "Reference" "R44"
+		(property "Reference" "R38"
 			(at 109.22 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5167,7 +5167,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R44")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -5185,7 +5185,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8775c9c-33fd-4454-8c26-8fd01b0db08c")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR066"
 			(at 161.29 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5245,7 +5245,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "#PWR064")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -5263,7 +5263,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fced21d0-bacb-49d0-9b17-47b368dff99d")
-		(property "Reference" "R46"
+		(property "Reference" "R40"
 			(at 109.22 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5327,7 +5327,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "R46")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -5344,7 +5344,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fed1df04-7fa6-4312-9b9b-8ab137ae286c")
-		(property "Reference" "Q11"
+		(property "Reference" "Q9"
 			(at 119.38 147.3201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5414,7 +5414,7 @@
 		(instances
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05/064430ba-d2ef-4218-b13a-03feb27628bb"
-					(reference "Q11")
+					(reference "Q9")
 					(unit 1)
 				)
 			)

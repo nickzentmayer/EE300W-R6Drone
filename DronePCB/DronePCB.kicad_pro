@@ -641,6 +641,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -660,7 +668,7 @@
         "uuid": "c9b74494-ac48-4f27-9459-39f0e04d9d05"
       }
     ],
-    "used_designators": "R42,R45",
+    "used_designators": "J1-9,R1-47,D1-10,L1-6,AE1,#PWR1-70,C1-57,Ci1,Csys1,M1-2,MK1,MOSFET1-2,Q1-9,RAC1,Ri1,RSR1,U1-10,Y1",
     "variants": []
   },
   "sheets": [

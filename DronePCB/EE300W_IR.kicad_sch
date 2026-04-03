@@ -1955,7 +1955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 210.1071 84.2277 0)
 			(hide yes)
 			(show_name no)
@@ -2135,7 +2135,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 210.1071 110.8977 0)
 			(hide yes)
 			(show_name no)
@@ -2223,7 +2223,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 210.1071 75.3377 0)
 			(hide yes)
 			(show_name no)
@@ -2311,7 +2311,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 122.555 93.466 0)
 			(hide yes)
 			(show_name no)
@@ -2399,7 +2399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 210.1071 102.0077 0)
 			(hide yes)
 			(show_name no)
@@ -3352,7 +3352,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 210.1071 121.0577 0)
 			(hide yes)
 			(show_name no)
@@ -3440,7 +3440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 210.1071 65.1777 0)
 			(hide yes)
 			(show_name no)
@@ -3528,7 +3528,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D5.0mm_IRGrey"
 			(at 210.1071 93.1177 0)
 			(hide yes)
 			(show_name no)

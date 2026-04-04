@@ -2070,6 +2070,12 @@
 		(uuid "0b4d63c4-299c-415e-a13f-9256884b8baf")
 	)
 	(junction
+		(at 154.94 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41227f7e-8d4f-4b6b-a2cf-d28929972513")
+	)
+	(junction
 		(at 170.18 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2152,6 +2158,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1aaf6f8-9dc8-4ebc-b3ca-8d113ceebbfc")
+	)
+	(junction
+		(at 152.4 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f83d0b61-fff8-462a-912b-e55577fb7326")
 	)
 	(junction
 		(at 147.32 121.92)
@@ -2396,16 +2408,6 @@
 			(type default)
 		)
 		(uuid "3d35fe6d-eae1-4e2a-951f-575b96dc9d44")
-	)
-	(wire
-		(pts
-			(xy 152.4 85.09) (xy 152.4 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dcc60ec-5884-46cb-ac8f-1ea65fba7dcd")
 	)
 	(wire
 		(pts
@@ -2989,6 +2991,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 100.33) (xy 152.4 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3b727c6-858e-4364-99ba-ef689f00bb5b")
+	)
+	(wire
+		(pts
 			(xy 148.59 144.78) (xy 165.1 144.78)
 		)
 		(stroke
@@ -3336,6 +3348,16 @@
 			(type default)
 		)
 		(uuid "fae73d9c-286c-4d11-8dcf-d689371a857f")
+	)
+	(wire
+		(pts
+			(xy 154.94 100.33) (xy 154.94 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcfd08da-9a01-4f0b-ba32-d3dc93410dcd")
 	)
 	(wire
 		(pts
@@ -4373,6 +4395,88 @@
 			(project "DronePCB"
 				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 152.4 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a5925c7-4ac4-4cca-88f1-2a4a532200d7")
+		(property "Reference" "J10"
+			(at 156.21 103.5049 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SysPower"
+			(at 156.21 106.0449 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 152.4 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 152.4 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "06596b6f-3edc-437a-985d-d80495ecf509")
+		)
+		(pin "1"
+			(uuid "a496a2b1-fcfa-486d-97c9-be5b1b2e2721")
+		)
+		(instances
+			(project "DronePCB"
+				(path "/c9b74494-ac48-4f27-9459-39f0e04d9d05"
+					(reference "J10")
 					(unit 1)
 				)
 			)

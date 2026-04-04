@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.35
         }
       },
       "diff_pair_dimensions": [
@@ -495,7 +495,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -668,7 +668,7 @@
         "uuid": "c9b74494-ac48-4f27-9459-39f0e04d9d05"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J10,R48",
     "variants": []
   },
   "sheets": [

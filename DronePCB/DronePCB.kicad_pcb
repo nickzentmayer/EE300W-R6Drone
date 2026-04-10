@@ -286,6 +286,17 @@
 			(uuid "a71ec4fa-5a95-4143-91fa-e455e7c3532f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/ExternalParts/ANT1204F002R0315A.STEP"
+			(offset
+				(xyz -6.15 2 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
@@ -3353,7 +3364,7 @@
 			(uuid "6c10b9b9-fe18-4ad0-a72a-e25ca862f1a8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D6.3mm_H11.0mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19669,7 +19680,7 @@
 			(uuid "9f25ae4d-bc6f-4317-bc93-18a2b3b0b800")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D6.3mm_H11.0mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21202,7 +21213,7 @@
 			(uuid "7c4fa75c-1fc9-44b2-98a1-68390a17539c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D6.3mm_H11.0mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21517,7 +21528,7 @@
 			(uuid "01157102-28c4-4f90-afbc-19b39c40f566")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Vishay_PowerPAK_1212-8_Single.step"
+		(model "${KIPRJMOD}/ExternalParts/SIS412DN-T1-GE3.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21525,7 +21536,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -22110,6 +22121,17 @@
 			(uuid "4d341e6b-6a2e-4f47-92f8-315af0a74e93")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/ExternalParts/DMM-4026-B-I2S-R.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -24033,7 +24055,7 @@
 			(uuid "1b2aa2e3-2105-4b15-905a-baaf22410518")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Radial_D6.3mm_H11.0mm_P2.50mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25543,7 +25565,7 @@
 			(uuid "58580cac-2113-4363-bdf2-fdc94293b58a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/Vishay_PowerPAK_1212-8_Single.step"
+		(model "${KIPRJMOD}/ExternalParts/SIS412DN-T1-GE3.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25551,7 +25573,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)

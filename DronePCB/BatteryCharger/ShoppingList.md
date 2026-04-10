@@ -32,9 +32,9 @@
 
 [R1 Resistor x1](https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD4303F/9845330) $0.10
 
-[R2 Resistor x1]
+[R2 Resistor x1](https://www.digikey.com/en/products/detail/yageo/AC0603FR-0766K5L/5896245) $0.10
 
-[R3, R4, R5 Resistor x3]
+[R3, R4, R5 Resistor x3](https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814)
 
 [R6, R10, R11 Resistor x3]
 

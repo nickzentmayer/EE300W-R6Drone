@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Security Drone Control</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;700&display=swap');
+
+  :root {
+    --bg:       #0a0c10;
+    --panel:    #111418;
+    --border:   #1e2530;
+    --accent:   #00e5ff;
+    --accent2:  #ff6b35;
+    --green:    #39ff14;
+    --red:      #ff2d55;
+    --text:     #c8d6e5;
+    --muted:    #4a5568;
+    --mono:     'Share Tech Mono', monospace;
+    --sans:     'Exo 2', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Header ── */
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel);
+  }
+  .logo {
+    font-family: var(--mono);
+    font-size: 1.3rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px var(--accent);
+  }
+  .logo span { color: var(--accent2); }
+  .status-dot {
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 8px var(--green);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; }
+    50%      { opacity: .4; }
+  }
+  .header-meta {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: .75rem;
+    color: var(--muted);
+  }
+
+  /* ── Layout ── */
+  main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 1px;
+    background: var(--border);
+  }
+
+  section {
+    background: var(--bg);
+    padding: 20px;
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: .7rem;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── Camera ── */
+  .cam-wrapper {
+    position: relative;
+    background: #000;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+  }
+  .cam-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .cam-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(to bottom, rgba(0,229,255,.06) 0%, transparent 30%),
+      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,229,255,.03) 2px, rgba(0,229,255,.03) 4px);
+  }
+  .cam-badge {
+    position: absolute;
+    top: 10px; left: 10px;
+    background: rgba(255,45,85,.85);
+    color: #fff;
+    font-family: var(--mono);
+    font-size: .65rem;
+    padding: 3px 8px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+  }
+  .cam-badge.live::before {
+    content: '● ';
+  }
+
+  /* ── IR Panel ── */
+  .ir-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Record card */
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+  }
+
+  .input-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  input[type="text"] {
+    flex: 1;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: .85rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color .2s;
+  }
+  input[type="text"]:focus { border-color: var(--accent); }
+  input[type="text"]::placeholder { color: var(--muted); }
+
+  .btn {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .15s;
+    white-space: nowrap;
+  }
+  .btn-accent {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .btn-accent:hover { background: #29f0ff; box-shadow: 0 0 14px var(--accent); }
+  .btn-red {
+    background: var(--red);
+    color: #fff;
+  }
+  .btn-red:hover { box-shadow: 0 0 14px var(--red); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+  }
+  .btn-ghost:hover { color: var(--text); border-color: var(--muted); }
+  .btn-send {
+    background: #1a2a1a;
+    color: var(--green);
+    border: 1px solid #2a4a2a;
+  }
+  .btn-send:hover { box-shadow: 0 0 10px var(--green); }
+  .btn:disabled { opacity: .4; cursor: not-allowed; }
+
+  /* Recording indicator */
+  #rec-status {
+    font-family: var(--mono);
+    font-size: .75rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 20px;
+  }
+  #rec-status.active { color: var(--red); }
+  #rec-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--red);
+    display: none;
+  }
+  #rec-status.active #rec-dot {
+    display: block;
+    animation: pulse .7s infinite;
+  }
+
+  /* Code list */
+  .code-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 340px;
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+  .code-list::-webkit-scrollbar { width: 4px; }
+  .code-list::-webkit-scrollbar-track { background: transparent; }
+  .code-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .code-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 10px;
+    transition: border-color .15s;
+  }
+  .code-item:hover { border-color: var(--muted); }
+  .code-name {
+    flex: 1;
+    font-family: var(--mono);
+    font-size: .82rem;
+    color: var(--accent);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .code-name.editing {
+    background: var(--panel);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    padding: 2px 6px;
+    color: var(--text);
+    outline: none;
+  }
+  .code-actions { display: flex; gap: 4px; flex-shrink: 0; }
+
+  .empty-state {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: .8rem;
+  }
+
+  /* Log */
+  #log {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: var(--mono);
+    font-size: .72rem;
+    color: var(--muted);
+    padding: 10px 12px;
+    height: 90px;
+    overflow-y: auto;
+    line-height: 1.6;
+  }
+  #log .ok   { color: var(--green); }
+  #log .err  { color: var(--red); }
+  #log .info { color: var(--accent); }
+
+  @media (max-width: 760px) {
+    main { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Security<span>Drone</span></div>
+  <div class="status-dot"></div>
+  <div class="header-meta" id="clock"></div>
+</header>
+
+<main>
+  <!-- Camera -->
+  <section>
+    <div class="section-label">Camera Feed</div>
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+      <span style="font-family:var(--mono); font-size:.72rem; color:var(--muted);">ROTATION</span>
+      <div style="display:flex; gap:4px;">
+        <button class="btn btn-ghost" id="rot-0"   onclick="setRotation(0)"   style="padding:5px 10px; font-size:.75rem;">0°</button>
+        <button class="btn btn-ghost" id="rot-90"  onclick="setRotation(90)"  style="padding:5px 10px; font-size:.75rem;">90°</button>
+        <button class="btn btn-ghost" id="rot-180" onclick="setRotation(180)" style="padding:5px 10px; font-size:.75rem;">180°</button>
+        <button class="btn btn-ghost" id="rot-270" onclick="setRotation(270)" style="padding:5px 10px; font-size:.75rem;">270°</button>
+      </div>
+    </div>
+    <div class="cam-wrapper">
+      <img id="cam-img" src="/video_feed" alt="Live feed"
+           onerror="this.style.display='none'; document.getElementById('cam-err').style.display='flex'"/>
+      <div class="cam-overlay"></div>
+      <div class="cam-badge live">LIVE</div>
+      <div id="cam-err" style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; flex-direction:column; gap:10px; color:var(--muted); font-family:var(--mono); font-size:.8rem;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/>
+          <line x1="1" y1="1" x2="23" y2="23"/>
+        </svg>
+        Camera unavailable
+      </div>
+    </div>
+  </section>
+
+  <!-- IR Control -->
+  <section class="ir-panel">
+    <div>
+      <div class="section-label">Record IR Code</div>
+      <div class="card">
+        <div class="input-row">
+          <input type="text" id="rec-name" placeholder="Code name (e.g. TV_Power)" maxlength="40"/>
+          <button class="btn btn-accent" id="btn-record" onclick="startRecording()">REC</button>
+          <button class="btn btn-red" id="btn-stop" onclick="stopRecording()" disabled>STOP</button>
+        </div>
+        <div id="rec-status">
+          <div id="rec-dot"></div>
+          <span id="rec-text">Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="flex:1; min-height:0;">
+      <div class="section-label">Saved Codes</div>
+      <div class="card" style="height: calc(100% - 32px); overflow: hidden;">
+        <div class="code-list" id="code-list">
+          <div class="empty-state">No codes saved yet.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-label">Activity Log</div>
+      <div id="log"><span class="info">System ready.</span></div>
+    </div>
+  </section>
+</main>
+
+<script>
+// ── Clock ─────────────────────────────────────────────────────────────────
+function updateClock() {
+  document.getElementById('clock').textContent =
+    new Date().toLocaleTimeString('en-US', {hour12: false});
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ── Log ───────────────────────────────────────────────────────────────────
+const logEl = document.getElementById('log');
+function log(msg, cls='') {
+  const line = document.createElement('div');
+  if (cls) line.className = cls;
+  const ts = new Date().toLocaleTimeString('en-US', {hour12:false});
+  line.textContent = `[${ts}] ${msg}`;
+  logEl.appendChild(line);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+// ── Load codes ────────────────────────────────────────────────────────────
+async function loadCodes() {
+  try {
+    const r = await fetch('/api/ir/codes');
+    const codes = await r.json();
+    renderCodes(codes);
+  } catch(e) { log('Failed to load codes', 'err'); }
+}
+
+function renderCodes(codes) {
+  const el = document.getElementById('code-list');
+  if (!codes.length) {
+    el.innerHTML = '<div class="empty-state">No codes saved yet.</div>';
+    return;
+  }
+  el.innerHTML = codes.map(name => `
+    <div class="code-item" id="item-${CSS.escape(name)}">
+      <span class="code-name" id="name-${CSS.escape(name)}">${escHtml(name)}</span>
+      <div class="code-actions">
+        <button class="btn btn-send" style="padding:5px 10px; font-size:.72rem"
+          onclick="sendCode('${escJs(name)}')">▶ SEND</button>
+        <button class="btn btn-ghost" style="padding:5px 8px; font-size:.72rem"
+          onclick="startRename('${escJs(name)}')">✎</button>
+        <button class="btn btn-red" style="padding:5px 8px; font-size:.72rem"
+          onclick="deleteCode('${escJs(name)}')">✕</button>
+      </div>
+    </div>`).join('');
+}
+
+// ── Send ──────────────────────────────────────────────────────────────────
+async function sendCode(name) {
+  try {
+    const r = await fetch(`/api/ir/send/${encodeURIComponent(name)}`, {method:'POST'});
+    const d = await r.json();
+    if (d.error) { log(`Send failed: ${d.error}`, 'err'); return; }
+    log(`Sent: ${name}`, 'ok');
+  } catch(e) { log(`Send error: ${e}`, 'err'); }
+}
+
+// ── Delete ────────────────────────────────────────────────────────────────
+async function deleteCode(name) {
+  if (!confirm(`Delete "${name}"?`)) return;
+  try {
+    const r = await fetch(`/api/ir/delete/${encodeURIComponent(name)}`, {method:'POST'});
+    const d = await r.json();
+    if (d.error) { log(`Delete failed: ${d.error}`, 'err'); return; }
+    log(`Deleted: ${name}`, 'info');
+    loadCodes();
+  } catch(e) { log(`Delete error: ${e}`, 'err'); }
+}
+
+// ── Rename ────────────────────────────────────────────────────────────────
+function startRename(name) {
+  const span = document.getElementById(`name-${CSS.escape(name)}`);
+  const orig = name;
+  span.contentEditable = true;
+  span.className = 'code-name editing';
+  span.focus();
+  const range = document.createRange();
+  range.selectNodeContents(span);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+
+  function finish() {
+    span.contentEditable = false;
+    span.className = 'code-name';
+    const newName = span.textContent.trim();
+    if (newName && newName !== orig) {
+      doRename(orig, newName);
+    } else {
+      span.textContent = orig;
+    }
+  }
+  span.onblur = finish;
+  span.onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); span.blur(); } };
+}
+
+async function doRename(old_, new_) {
+  try {
+    const r = await fetch('/api/ir/rename', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({old: old_, new: new_})
+    });
+    const d = await r.json();
+    if (d.error) { log(`Rename failed: ${d.error}`, 'err'); loadCodes(); return; }
+    log(`Renamed "${old_}" → "${new_}"`, 'ok');
+    loadCodes();
+  } catch(e) { log(`Rename error: ${e}`, 'err'); loadCodes(); }
+}
+
+// ── Record ────────────────────────────────────────────────────────────────
+let pollTimer = null;
+
+async function startRecording() {
+  const name = document.getElementById('rec-name').value.trim();
+  if (!name) { log('Enter a name first', 'err'); return; }
+  try {
+    const r = await fetch('/api/ir/record', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({name})
+    });
+    const d = await r.json();
+    if (d.error) { log(`Record error: ${d.error}`, 'err'); return; }
+    setRecUI(true);
+    log(`Recording "${name}" — press your remote button…`, 'info');
+    pollTimer = setInterval(pollRecStatus, 800);
+  } catch(e) { log(`Record error: ${e}`, 'err'); }
+}
+
+async function stopRecording() {
+  await fetch('/api/ir/record/stop', {method:'POST'});
+  clearInterval(pollTimer);
+  setRecUI(false);
+  log('Recording stopped.', 'info');
+  setTimeout(loadCodes, 600);
+}
+
+async function pollRecStatus() {
+  try {
+    const r = await fetch('/api/ir/record/status');
+    const d = await r.json();
+    if (!d.recording) {
+      clearInterval(pollTimer);
+      setRecUI(false);
+      log(`Saved: ${d.name || 'code'}`, 'ok');
+      setTimeout(loadCodes, 400);
+    }
+  } catch(e) {}
+}
+
+function setRecUI(active) {
+  const status = document.getElementById('rec-status');
+  const txt    = document.getElementById('rec-text');
+  const btnRec = document.getElementById('btn-record');
+  const btnStop= document.getElementById('btn-stop');
+  status.className = active ? 'active' : '';
+  txt.textContent  = active ? 'Recording… point remote at receiver and press button' : 'Ready';
+  btnRec.disabled  = active;
+  btnStop.disabled = !active;
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function escJs(s) { return s.replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
+
+// ── Rotation ──────────────────────────────────────────────────────────────
+async function setRotation(deg) {
+  try {
+    const r = await fetch('/api/camera/rotation', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({rotation: deg})
+    });
+    const d = await r.json();
+    if (d.error) { log(`Rotation error: ${d.error}`, 'err'); return; }
+    updateRotationUI(deg);
+    log(`Camera rotation: ${deg}°`, 'info');
+  } catch(e) { log(`Rotation error: ${e}`, 'err'); }
+}
+
+function updateRotationUI(deg) {
+  [0, 90, 180, 270].forEach(d => {
+    const btn = document.getElementById(`rot-${d}`);
+    if (btn) {
+      btn.className = d === deg ? 'btn btn-accent' : 'btn btn-ghost';
+      btn.style.padding = '5px 10px';
+      btn.style.fontSize = '.75rem';
+    }
+  });
+}
+
+async function loadRotation() {
+  try {
+    const r = await fetch('/api/camera/rotation');
+    const d = await r.json();
+    updateRotationUI(d.rotation);
+  } catch(e) {}
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────
+loadCodes();
+loadRotation();
+</script>
+</body>
+</html>
